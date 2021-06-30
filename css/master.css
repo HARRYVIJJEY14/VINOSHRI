@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Great+Vibes&family=ZCOOL+XiaoWei&family=Zhi+Mang+Xing&display=swap');@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Great+Vibes&family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .nav {
+    height: 80px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+    font-family: 'segoe ui';
+    
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 57px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Akaya Kanadaka';
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    margin-top: 21px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    border: 2px solid  transparent;
+    padding: 7px 10px 7px 10px;
+    text-decoration: none;
+    color: #D83A56;
+    margin-right: 10px;
+    border-radius: 10px;
+
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+      
+      
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      z-index: 2;
+      
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: 230px; calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+
+  /*   content*/
+.intro{
+    background: url("./img2.svg");
+    width: 100%;
+    height: 400px;
+    filter:blur(2px);
+    background-size: cover;
+}
+
+.content {
+    background-attachment: scroll;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%;
+    padding: 40px;
+    text-align: center;
+    
+    
+  }
+.content h1{
+    
+    font-size: 60px;
+    font-family: 'Akaya Kanadaka'; 
+    font-family: 'ZCOOL XiaoWei', serif;
+    
+    
+}
+span{
+    border-bottom-width: 2px solid;
+}
+
+.content p{
+    font-family: 'Akaya Kanadaka', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'ZCOOL XiaoWei', serif;
+font-family: 'Zhi Mang Xing', cursive;
+font-size: 20px;
+
+
+}
+.collection{
+    width: 100%;
+    height: 400px;
+    
+    
+   
+}
+
+.cards {
+    
+    padding: 20px 20px ;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.card1,.card2,.card3{
+    width:200px;
+    height: 300px;
+    border: 2px solid gray;
+    display: grid;
+    background-color: white;
+    
+    text-align: center;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-left: 40px;
+    transition: all 1s ease-out;
+    
+}
+.card2{
+    margin-top: 40px;
+}
+
+.cards img{
+    width: 190px;
+    height:250px;
+    margin-top: 2px;
+    
+}
+
+.card3:hover{
+    transform: scale(1.1);
+    background-color: #BF1363;
+    border: 2px solid transparent;
+}
+.card1:hover{
+    transform: scale(1.1);
+    border: 2px solid transparent;
+    background-color: #022E57;
+    
+}
+.cards a{
+    text-decoration: none;
+
+}
+.cards a:hover{
+    color: white;
+}
+ 
+
+.card2:hover{
+    transform: scale(1.1);
+    background-color: #39A6A3;
+    border: 2px solid transparent;
+   
+}
+
+section#About{
+  display: flex;
+  width: 100%;
+  height: 450px;
+  padding: 70px 30px;
+  background-color: #BF1363;
+  justify-content:space-around;
+  z-index: 1;
+  
+}
+
+#about-images {
+  width:400px;
+  height: 300px;
+  border: 2px solid white;transition: all 1s ease-in-out;
+  
+}
+#about-images:hover{
+  transform:scale(1.1);
+}
+
+.About-content{
+  width:60%;
+  border: 2px solid rgb(243, 243, 243);
+  text-align: center;
+  padding: 10px;
+}
+.About-content h1{
+  font-family: 'Cookie';
+  font-size: 50px;
+  color: white;
+  padding: 10px;
+  border-bottom: 2px;
+  border-style: dashed;
+  border-color: rgb(141, 17, 190);
+}
+.About-content p{
+  margin-top: 4px;
+  border: 2px dashed rgb(141, 17, 190);
+  padding: 73px 10px;
+  color: #fff;
+}
+
+.Signup{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 90px;
+  align-items: center;
+}
+
+.forms{
+  width:360px;
+  
+}
+
+
+#About{
+  display: flex;
+}
+
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid;
+  padding: 20px 20px;
+  border-color: blue;
+  border-radius: 10px;
+  
+}
+input[type=text],input[type=email],input[type=mobilenumber],input[type=date],input[type=address],input[type=region]{
+  padding: 5px;
+  border-color: green;
+  border:1px solid transparent;
+}
+.submit{
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  border-color: transparent
+  ;
+}
+.submit:hover{
+  background-color:  #45a049;
+}
+.cancel{
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: red;
+  color:white;
+  border-color: transparent;
+}
+.cancel:hover{
+  background-color: rgb(172, 9, 9);
+}
+
+.Signup h2{
+  text-align: center;
+  font-family: 'Cookie';
+  font-size: 50px;
+}
+
+
+#Contact{
+  width: 100%;
+  height: 200px;
+  background-color: #BF1363;
+  display: flex;
+  
+  
+}
+.social{
+  margin: 57px 195px;
+  padding: 20px;
+  text-align: center;
+  
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+}
+li img{
+  width:20px;
+  height:20px;
+  flex-direction: column;
+  margin-right: 20px;
+
+  
+  
+}
+.foot-content{
+  font-family: cursive;
+  font-size: 10px;
+  margin: 57px 195px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
